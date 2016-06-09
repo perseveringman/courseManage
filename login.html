@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>courseManage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+  </head>
+  <body>
+    <!--遮罩-->
+    <div id="shade">
+    <header>
+      <nav>
+        <h1></h1>
+      </nav>
+    </header>
+    <main>
+      <p>courseManage</p>
+      <article id="loginForm">
+        <form class="form-horizontal" action="signIn.php" method="post">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">UserID</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="UserID" id="inUserID">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inPassword1" placeholder="Password"  >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" checked> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-7 col-sm-10">
+              <button type="submit" class="btn btn-primary" id="signIn">Sign in</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                Sign up
+              </button>
+            </div>
+            <section class="col-sm-offset-4 col-sm-8">
+    
+            </section>
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>&copy;RyanChou 2016</p>
+    </footer>
+    </div>
+    <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Sign up</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">UserID</label>
+                  <input type="text" class="form-control" id="upUserID" placeholder="UserID">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="upPassword1" placeholder="Password">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">PasswordSure</label>
+                  <input type="password" class="form-control" id="upPassword2" placeholder="PasswordSure">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <button type="submit" class="btn btn-primary" id="signUp">Sign up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
