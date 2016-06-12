@@ -1,0 +1,91 @@
+@charset "UTF-8";
+body{
+	position: fixed;
+ 	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	background: url(../images/4.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color:#fff;
+}
+#shade{
+	background-color: rgba(0,0,0,.4);
+	position: fixed;
+ 	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+}
+.form-inline{
+	font-size: 25px
+}
+#partSearch{
+	width: 80%;
+	margin:40px auto;
+	text-align: center;
+
+}
+#partDelete{
+	width: 80%;
+	margin:180px auto;
+	text-align: center;
+
+}
+#partUpdate{
+	width: 80%;
+	margin:180px auto;
+	text-align: center;
+}
+nav{
+	width: 100%;
+	height:60px;
+
+}
+span{
+	position: absolute;
+	right: 20px;
+	top:10px;
+}
+
+.nav{
+	display: block;
+	margin:0 auto;
+}
+.nav li a{
+
+	color:#fff;
+}
+.nav li a:hover{
+	color:#333;
+}
+
+#tableSearch{
+	margin-top: 20px;
+}
+#tableSearch tbody:hover{
+	color: #333;
+}
+thead tr th{
+	text-align: center;
+}
+article{
+	display: none;
+}
+#partSearch{
+	display: block;
+}
+footer{
+	width: 100%;
+	height:60px;
+	position: absolute;
+	bottom: 0;
+
+}
+footer p{
+	text-align: center;
+	font-size: 16px;
+	line-height: 60px;
+}
